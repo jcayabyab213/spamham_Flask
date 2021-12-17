@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #efefef;
+	color: black;
+}
+
+li, a, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration:none;
+	background-color: slategray;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1px 5%;
+	background-color: slategray;
+}
+
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+	background-color: slategray;
+}
+
+.nav_links {
+	list-style: none;
+	
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+	
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0,136,169,0.8);	
+}
+
+button{
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+	
+	color: #0088a9;
+}
+body {
+	background-color: #efefef;
+	text-align: center;
+}
+
+p {
+	color: black;
+	font: Shanti;
+	font-size: 2em;
+	margin: 20px;
+}
+
+
+
+input {
+	
+	
+	margin: 20px;
+	border: none;
+	border-radius: 10px;
+	font: Shanti;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+
+#classify {
+	background-color: palevioletred;
+	color: white;
+	width: 130px;
+	height: 60px;
+}
+
+form
+{
+	background-color: #efefef;
+}
+#txtarea
+{
+	box-shadow: 0 0 20px 0 #999;
+	width: 800px;
+	height: 600px;
+	padding: 1em;
+	border-radius: 10px;
+	border:2px solid transparent;
+	outline: none;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.4;
+	transition: all 0.2s;
+	background-color: snow;
+	
+}
+
+#txtarea:hover
+{
+	cursor: pointer;
+}
+
+#txtarea:focus
+{
+	cursor: text;
+	color: #333333;
+	background-color: white;
+	border-color: #333333;
+	box-shadow: none;
+}
+
+#classify:hover {
+	background-color: mediumvioletred;
+	cursor: pointer;
+}
+
+#txtarea:focus::placeholder {
+  color: transparent;
+}
