@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF 8">
+		<title> Email Filtering </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+	</head>
+	<body>
+		<img src="https://www.pinclipart.com/picdir/middle/27-279831_email-no-background-clipart-email-computer-icons-clip.png">
+		<br>
+		<form action="greet" method="post">
+			{% with messages = get_flashed_messages(category_filter=["flash1"]) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+						<br>
+	
+		<textarea id="txtarea" placeholder="Input Email to be Classified" name="name_input" rows="8" cols="70">
+			<?php if(isset($_POST['textarea1'])) {echo htmlentities ($_POST['textarea1']); }?>
+		</textarea>
+
+			<br>
+			<input type="SUBMIT" value="CLASSIFY" id="greet">
+		</form>
+
+		
+	</body>
+
+<html>
+

@@ -1,0 +1,32 @@
+
+<html>
+	<head>
+		<meta charset="UTF 8">
+		<title> Email Filtering </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css')}}">
+	</head>
+	<body>
+		<header>
+				<a href="{{url_for('index')}} " class="logo"><img src="https://i.ibb.co/34t4wYw/Email-Classifier-100-x-50-px-200-x-150-px-200-x-100-px-300-x-200-px-2.png" alt="logo" width="220px" > </a>
+				<nav>
+					<ul class="nav_links">
+						<li><a href="{{url_for('index') }}">Home</li>
+						<li><a href="#">About</li>						
+					</ul>
+				</nav>
+				<a class="cta" href="#"><button>Contact</button></a>
+		</header>		
+		<br>
+	<div class="contact-box">	
+			<form>
+				<input type="text" class="input-field" placeholder="Name">
+				<input type="email" class="input-field" placeholder="Email">
+				<input type="text" class="input-field" placeholder="Subject">
+				<textarea id="txtarea" type="text" class="input-field" placeholder="Message"></textarea>
+				<button type="button" class="btn">Send Message</button>
+			</form>
+	</div>	
+	</body>
+
+</html>
+
