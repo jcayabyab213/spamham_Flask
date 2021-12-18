@@ -26,11 +26,15 @@ def greet():
 	testing_counts = vectorizer.transform(testing)
 	predictions = model.predict(testing_counts)
 	flash(str(request.form['name_input']), "flash2")
-	if (predictions == 1):
-			flash("This email is a spam.", "flash1")
-			
+	x = len(str(request.form['name_input']))
+	
+	if (x==0):
+		flash("Please input something", "flash1")
 	else:
-    		flash("This email is legit (ham)", "flash1")
+		if (predictions == 1):
+				flash("This email is a spam.", "flash1")
+		else:
+    			flash("This email is legit (ham)", "flash1")
 	return render_template("index.php")
 
 @app.route("/contact")
