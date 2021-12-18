@@ -11,7 +11,7 @@
 				<nav>
 					<ul class="nav_links">
 						<li><a href="#">Home</li>
-						<li><a href="#">About</li>						
+												
 					</ul>
 				</nav>
 				<a class="cta" href="{{url_for('contact') }}"><button>Contact</button></a>
