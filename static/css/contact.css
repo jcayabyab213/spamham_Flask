@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@500&display=swap');
+
+
 
 * {
 	box-sizing: border-box;
@@ -6,12 +9,18 @@
 	background-color: slategray;
 }
 
+
+
 li, a, button {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	color: #edf0f1;
 	text-decoration:none;
+}
+
+.ctaa {
+	background-color: #efefef;
 }
 
 header {
@@ -70,10 +79,40 @@ body
 	background-color: white;
 	box-shadow: 0 0 20px 0 #999;
 	top: 50%;
-	left: 50%;
+	left: 70%;
 	transform: translate(-50%,-50%);
 	position: absolute;
 }
+
+
+.container
+{
+	width: 700px;
+	background-color: #efefef;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.container h2
+{
+	background-color: #efefef;
+	font-family: Cinzel;
+	font-size: 40px;
+}
+
+.container p, i
+{
+	background-color: #efefef;
+	font-family: Cinzel;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align:top
+
+}
+
+
 
 form
 {
